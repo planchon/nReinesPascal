@@ -58,13 +58,6 @@ PROCEDURE updateTabAttack (x,y : integer; VAR tab : echec);
 VAR
 	i, j : integer;
 BEGIN
-	// colone et lignes
-	FOR i := 0 TO tailleGrille - 1 DO
-	BEGIN
-		tab.tabAttack[i, y] := True;
-		tab.tabAttack[x, i] := True;
-	END;
-	
 	i := x;
 	j := y;
 	
